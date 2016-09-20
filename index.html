@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>CC Lab Assignment 3</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	
+	<div id="header"></div>
+
+
+<!-- API -->
+<!-- create search form -->
+	<div class="museum_search">
+		<form id="keyword_search">
+
+			<select id="field">
+				
+				<option value="q">General</option>
+				<option value="names">Names</option>
+				<option value="places">Places</option>
+				<option value="materials_techniques">Materials & Techniques</option>
+				<option value="earliest_year">Earliest Year</option>
+
+			<select>
+
+			<!-- input text into search bar -->
+			<input type="text" name="q" value="Keyword Search" id="q">
+			
+			<!-- submit/search button -->
+			<input type="submit" id="submit" value="search">
+		</form>
+
+<!-- display results -->
+		<div id="search_results">					
+			<div class="image"></div>
+			<div class="text">
+<!-- 			<div id="temperature"></div>
+				<div id="weather"></div> -->
+			</div>
+		</div>
+	
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
