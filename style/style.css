@@ -36,8 +36,8 @@ body {
 }
 
 #museum_search{
-	width: 380px;
-	height: 105px;
+	width: 500px;
+	height: 500px;
 	padding: 10px;
 	margin: 0 auto;
 	
@@ -49,18 +49,19 @@ body {
 
 #q {
 	padding-left: 5px;
-	width: 200px;
+	width: 400px;
 	margin-left: 10px;
 	height: 26px;
 	text-transform: capitalize;
+	font-size: 1em;
 }
 
 #search_results {
 	display:flex;
 	display:-webskit-flex;
 	display:-moz-flex;
-/*	justify-content:space-around;
-*/	width:100%;
+	justify-content:space-around;	
+	width:100%;
 /*	display:inline-block;*/
 	font-size: 20px;
   text-transform: capitalize;
@@ -68,10 +69,8 @@ body {
 	vertical-align: middle;
 	margin:0 0 0 10px;
 /*	padding-top:10px;*/
-/*	background-color: #FFF;
-*/}
-
 }
+
 
 .text {
 	display:flex;
@@ -80,7 +79,7 @@ body {
 	width: 260px;
 	height: 85px;
 	margin:10px 0 10px;
-	color:#999;
+	color:#000;
 	display: inline-block;
 }
 
