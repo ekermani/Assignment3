@@ -1,14 +1,41 @@
-#header{
-	width: 380px;
-	height: 105px;
-	padding: 10px;
-	position: relative;
-	margin:0 auto;
-	background: url('img/va-logo.png') no-repeat;
-	display: block;
+@import 'https://fonts.googleapis.com/css?family=Abel';
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Abel", sans-serif;
 }
 
-.museum_search{
+#container {
+	width: 100vw;
+	height: 100vh;
+}
+
+#background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("img/va-image.jpg");
+	background-size: cover;
+	opacity: 0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+  z-index: -1;
+}
+
+#header{
+	width: 100vw;
+	height: 105px;
+	padding: 10px 10px;
+	position: relative;
+	margin:30px auto;
+	background: url('img/va-logo.png') no-repeat;
+	display: block;
+	z-index: 2;
+	background-color: white;
+}
+
+#museum_search{
 	width: 380px;
 	height: 105px;
 	padding: 10px;
@@ -16,23 +43,34 @@
 	
 }
 
-#field {
+/*#field {
 	margin-left: 10px;
-}
+}*/
 
 #q {
 	padding-left: 5px;
 	width: 200px;
 	margin-left: 10px;
+	height: 26px;
+	text-transform: capitalize;
 }
 
 #search_results {
-	margin:0 auto;
 	display:flex;
 	display:-webskit-flex;
 	display:-moz-flex;
-	justify-content:space-around;
-	width:100%;
+/*	justify-content:space-around;
+*/	width:100%;
+/*	display:inline-block;*/
+	font-size: 20px;
+  text-transform: capitalize;
+	text-align: left;
+	vertical-align: middle;
+	margin:0 0 0 10px;
+/*	padding-top:10px;*/
+/*	background-color: #FFF;
+*/}
+
 }
 
 .text {
@@ -43,20 +81,7 @@
 	height: 85px;
 	margin:10px 0 10px;
 	color:#999;
-}
-
-#search_results {
-	display:inline-block;
-	width: 600px;
-	height: 600px;
-	font-size: 20px;
-	font-family: Arial Black, sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-	vertical-align: middle;
-	margin:0 0 0 10px;
-	padding-top:10px;
-	border: 1px solid #999;
+	display: inline-block;
 }
 
 #submit{
